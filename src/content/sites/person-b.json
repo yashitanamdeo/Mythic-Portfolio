@@ -1,0 +1,421 @@
+{
+  "identity": {
+    "id": "yashita",
+    "handle": "YASHITA",
+    "firstName": "Yashita",
+    "lastName": "Namdeo",
+    "fullName": "Yashita Namdeo",
+    "title": "Senior Software Engineer",
+    "location": "Indore, India",
+    "email": "yashita.namdeo2000@gmail.com",
+    "phone": "",
+    "github": "https://github.com/yashitanamdeo",
+    "linkedin": "https://www.linkedin.com/in/yashitanamdeo/",
+    "resume": "/Yashita_Namdeo_Resume.pdf",
+    "timezone": "Asia/Kolkata",
+    "version": "v1.0.0",
+    "seoTitle": "Yashita Namdeo — Senior Software Engineer | MeasureOne",
+    "seoDescription": "Senior Software Engineer at MeasureOne. Angular · Node.js · TypeScript · SQL. Consumer data verification platforms. 191+ LeetCode · open-source portfolio with 460+ stars."
+  },
+  "nav": [
+    { "href": "#about", "label": "About" },
+    { "href": "#work", "label": "Work" },
+    { "href": "#projects", "label": "Projects" },
+    { "href": "#skills", "label": "Skills" },
+    { "href": "#upskilling", "label": "Upskilling" },
+    { "href": "#contact", "label": "Contact" }
+  ],
+  "boot": {
+    "title": "yashita.dev — boot sequence v1.6",
+    "signalLock": "/// signal lock",
+    "skipLabel": "skip intro",
+    "accessGranted": "Access granted",
+    "lines": [
+      { "text": "mount /dev/YASHITA", "status": "ok" },
+      { "text": "init angular … node … typescript", "status": "ok" },
+      { "text": "connect measureone.api.gateway", "status": "wait" },
+      { "text": "load sql · postgres · rest", "status": "ok" },
+      { "text": "fetch leetcode.solved (191+)", "status": "ok" },
+      { "text": "verify wcag · scrum · module ownership", "status": "ok" },
+      { "text": "compile portfolio.bin", "status": "ok" }
+    ]
+  },
+  "hero": {
+    "signalLabel": "00 / SIGNAL",
+    "tagline": "Senior Software Engineer at MeasureOne shipping consumer data-access and verification products — Angular, Node.js, TypeScript and SQL — with module ownership, Scrum leadership and WCAG-minded UI.",
+    "dwgTitle": "SENIOR SWE · ANGULAR / NODE · FULL-STACK",
+    "dwgNo": "YASHITA-2026-001",
+    "rev": "1.6",
+    "primaryCta": { "label": "View case files", "href": "#projects" },
+    "secondaryCta": { "label": "Transmit", "href": "#contact" }
+  },
+  "about": {
+    "sectionId": "01 / ABOUT",
+    "eyebrow": "background & focus",
+    "headline": "Who is Yashita Namdeo?",
+    "body": "Yashita Namdeo is a Senior Software Engineer at MeasureOne, where she has grown from Engineering Intern (2022) through Associate and Software Engineer into senior ownership of verification and data-access product modules. She leads delivery across 5+ projects, runs Scrum ceremonies, and pairs Angular/Node/SQL implementation with accessibility (WCAG) and test discipline (Karma, Jasmine, Mocha, Chai). CSE graduate of SVIIT / SVVV Indore (2018–2022), she also ships open source — her personal portfolio template has 460+ GitHub stars — and practices DSA on LeetCode (191+) and GeeksforGeeks.",
+    "highlights": [
+      "MeasureOne",
+      "Senior Software Engineer",
+      "Angular, Node.js and SQL",
+      "5+ projects as module owner",
+      "WCAG accessibility",
+      "460+ ★ portfolio template"
+    ],
+    "subjectLabel": "YASHITA NAMDEO",
+    "statusLabel": "Operational",
+    "verifiedLabel": "//: verified",
+    "asciiInitials": "YN",
+    "stats": [
+      { "value": "4+", "label": "years at MeasureOne (intern→senior)" },
+      { "value": "5+", "label": "projects owned end to end" },
+      { "value": "460+", "label": "GitHub stars on portfolio V1" },
+      { "value": "191+", "label": "LeetCode problems solved" }
+    ]
+  },
+  "capabilities": {
+    "sectionId": "02 / CAPABILITIES",
+    "eyebrow": "areas of focus",
+    "headline": "What can Yashita Namdeo build?",
+    "items": [
+      {
+        "id": "01",
+        "title": "Full-Stack Product Delivery",
+        "blurb": "Angular + Node + SQL modules from requirements to release",
+        "body": "Owns product modules end to end at MeasureOne — gathering requirements with PMs, designing scalable Angular/Node solutions, shipping REST-backed features and lifting delivery velocity through Scrum (~25% reported velocity gain while SE).",
+        "tags": ["Angular", "Node.js", "SQL", "REST"]
+      },
+      {
+        "id": "02",
+        "title": "Consumer Data Verification UX",
+        "blurb": "Widgets & portals that streamline customer verification",
+        "body": "Built and evolved 6+ verification widgets/portals (HTML/CSS/Bootstrap/JS/Angular 8→14, Node, REST) that reduce friction in consumer data-access flows — the core MeasureOne product surface.",
+        "tags": ["Verification", "Widgets", "Angular", "UX"]
+      },
+      {
+        "id": "03",
+        "title": "Engineering Leadership",
+        "blurb": "Module ownership, Scrum facilitation, standards",
+        "body": "As project/module owner across 5+ workstreams: daily stand-ups, sprint planning and retros; coding standards and design patterns that cut technical debt (~40% reported); scope delivery beating client expectations.",
+        "tags": ["Scrum", "Ownership", "Standards"]
+      },
+      {
+        "id": "04",
+        "title": "Accessibility & Quality",
+        "blurb": "WCAG reviews plus unit/functional test culture",
+        "body": "Routine WCAG compliance passes on UI code, plus Karma/Jasmine/Mocha/Chai suites targeting high coverage — fewer post-release defects and a more inclusive product for every user.",
+        "tags": ["WCAG", "Karma", "Jasmine", "Testing"]
+      },
+      {
+        "id": "05",
+        "title": "Open Source & Mentorship Energy",
+        "blurb": "Portfolio template starred by hundreds of learners",
+        "body": "Maintains a widely forked personal-portfolio starter (460+ ★ / 200+ forks) plus public LeetCode and GFG solution repos — teaching by shipping readable, reusable front-end baselines.",
+        "tags": ["Open Source", "GitHub", "Teaching"]
+      },
+      {
+        "id": "06",
+        "title": "Applied ML Side Projects",
+        "blurb": "Real-time vision demos when curiosity spikes",
+        "body": "Ships ML side projects like real-time face-mask detection (OpenCV + MobileNetV2, ~95% accuracy across mask colors) and TensorFlow.js facial landmark demos — bridging web craft with practical CV.",
+        "tags": ["OpenCV", "TensorFlow", "Keras", "React"]
+      }
+    ]
+  },
+  "experience": {
+    "sectionId": "03 / EXPERIENCE",
+    "eyebrow": "03 / EXPERIENCE",
+    "headline": "Where I've shipped",
+    "items": [
+      {
+        "hex": "0x00",
+        "range": "[2026–]",
+        "meta": "Remote · May 2026 — Present",
+        "role": "Senior Software Engineer",
+        "company": "MeasureOne",
+        "summary": "Senior ownership on MeasureOne's consumer data-access and verification platform — mentoring, architecture calls and delivery across multiple client-facing modules.",
+        "bullets": [
+          "Lead design and delivery for senior-scoped modules spanning Angular frontends and Node/SQL backends",
+          "Set coding standards, review PRs and unblock squads on verification and data-access flows",
+          "Partner with product and DevOps on release quality, observability and accessibility bars"
+        ],
+        "tags": ["Angular", "Node.js", "TypeScript", "SQL", "Leadership"]
+      },
+      {
+        "hex": "0x01",
+        "range": "[2024–26]",
+        "meta": "Ahmedabad · May 2024 — Apr 2026",
+        "role": "Software Engineer",
+        "company": "MeasureOne",
+        "summary": "Module owner across 5+ projects — Scrum facilitation, scalable designs with PMs and org-wide engineering standards.",
+        "bullets": [
+          "Led delivery of 5+ projects as project/module owner, exceeding client scope expectations (~20%)",
+          "Ran Scrum (stand-ups, planning, retros) with ~25% velocity lift and on-time delivery",
+          "Designed scalable solutions with PMs that improved project efficiency (~15%)",
+          "Drove best practices and design patterns cutting technical debt (~40%)"
+        ],
+        "tags": ["Angular", "Node.js", "Scrum", "Architecture"]
+      },
+      {
+        "hex": "0x02",
+        "range": "[2022–24]",
+        "meta": "Ahmedabad · Aug 2022 — Apr 2024",
+        "role": "Associate Software Engineer",
+        "company": "MeasureOne",
+        "summary": "Production Angular/Node/SQL features with performance, debugging and WCAG focus.",
+        "bullets": [
+          "Architected high-performance Angular + Node + SQL features (~35% app performance improvement)",
+          "Debugged complex issues with monitoring tooling to keep verification flows stable",
+          "Enforced WCAG compliance reviews to improve accessibility for all users"
+        ],
+        "tags": ["Angular", "Node.js", "SQL", "WCAG"]
+      },
+      {
+        "hex": "0x03",
+        "range": "[2022]",
+        "meta": "Ahmedabad · Feb 2022 — Jul 2022",
+        "role": "Engineering Intern",
+        "company": "MeasureOne",
+        "summary": "First production chapter — widgets, portals and test suites for customer verification.",
+        "bullets": [
+          "Shipped 6+ widgets & portals (Angular 8–14, Bootstrap, Node, REST) for verification UX",
+          "Hardened features and performance (~25% stability / ~20% satisfaction gains)",
+          "Built Karma/Jasmine/Mocha/Chai coverage (~95%) cutting post-release defects (~30%)"
+        ],
+        "tags": ["Angular", "Node.js", "REST", "Testing"]
+      },
+      {
+        "hex": "0x04",
+        "range": "[2021]",
+        "meta": "India · Jul 2021 — Aug 2021",
+        "role": "MEAN Stack Developer",
+        "company": "Webtek Labs",
+        "summary": "Built a bookstore CRUD app on AngularJS, Express, Node and MongoDB Atlas.",
+        "bullets": [
+          "Implemented create / read / update / delete for book inventory against MongoDB Atlas",
+          "Practiced full MEAN request lifecycle from UI forms to API to persistence"
+        ],
+        "tags": ["MEAN", "MongoDB", "Express", "AngularJS"]
+      }
+    ]
+  },
+  "projects": {
+    "sectionId": "04 / SELECTED WORK",
+    "eyebrow": "04 / SELECTED WORK",
+    "headline": "Things I've built",
+    "items": [
+      {
+        "num": "01",
+        "category": "Open Source / Portfolio",
+        "org": "Personal",
+        "year": "2021–",
+        "title": "yashitanamdeo.github.io",
+        "tagline": "Personal portfolio template — 460+ stars, 200+ forks",
+        "body": "Gatsby-era personal site that became a go-to starter for students worldwide. Still referenced as V1 while this mythic rebuild becomes the next chapter.",
+        "bullets": [
+          "Public template with hero, jobs, featured projects and blog content model",
+          "Hundreds of forks — strong signal for clean, copyable front-end structure",
+          "Hosted on GitHub Pages at yashitanamdeo.github.io"
+        ],
+        "outcome": "One of the most starred student portfolio templates in its peer set.",
+        "tags": ["JavaScript", "Gatsby", "GitHub Pages"]
+      },
+      {
+        "num": "02",
+        "category": "ML / Computer Vision",
+        "org": "Personal",
+        "year": "2021",
+        "title": "Realtime Face Mask Detection",
+        "tagline": "Webcam mask detector — OpenCV + MobileNetV2 + Keras",
+        "body": "Custom dataset via Bing Search API + Kaggle; ~95% accuracy across mask colors with robustness tweaks for varied lighting.",
+        "bullets": [
+          "OpenCV capture pipeline with TensorFlow/Keras MobileNetV2 classifier",
+          "Custom dataset curation and lighting-condition hardening",
+          "Demo artifacts shared publicly on GitHub"
+        ],
+        "outcome": "Practical CV demo bridging dataset work to real-time inference.",
+        "tags": ["OpenCV", "TensorFlow", "Keras", "Python"]
+      },
+      {
+        "num": "03",
+        "category": "Frontend / React",
+        "org": "Personal",
+        "year": "2021",
+        "title": "Covid-19 Tracker",
+        "tagline": "Live cases across 180+ countries — React + Firebase + MUI",
+        "body": "Worldwide and per-country views with map markers and historical line charts; deployed on Firebase Hosting.",
+        "bullets": [
+          "Clickable tabs for cases / recoveries / deaths",
+          "Map markers + hover tooltips with exact figures",
+          "Firebase-backed React + Material UI stack"
+        ],
+        "outcome": "Polished public dashboard for pandemic stats exploration.",
+        "tags": ["React", "Firebase", "Material UI"]
+      },
+      {
+        "num": "04",
+        "category": "Frontend / React",
+        "org": "Personal",
+        "year": "2021",
+        "title": "Disney+ Clone",
+        "tagline": "Google sign-in streaming UI — React, Redux, Firebase",
+        "body": "Disney+-style catalog with Google auth, styled-components and detail routes for 15+ titles.",
+        "bullets": [
+          "Firebase Auth Google sign-in",
+          "Redux state for catalog browsing",
+          "Deployed demo on Firebase Hosting"
+        ],
+        "outcome": "Auth + catalog SPA matching a familiar consumer streaming shell.",
+        "tags": ["React", "Redux", "Firebase", "Styled Components"]
+      },
+      {
+        "num": "05",
+        "category": "Full-Stack / MEAN",
+        "org": "Webtek Labs",
+        "year": "2021",
+        "title": "Book Store Application",
+        "tagline": "MEAN CRUD bookstore on MongoDB Atlas",
+        "body": "Internship build: add, list, update and delete books through an AngularJS UI backed by Express/Node and MongoDB Atlas.",
+        "bullets": [
+          "Full CRUD against cloud MongoDB",
+          "REST API boundaries between UI and persistence",
+          "Foundation for later Angular production work at MeasureOne"
+        ],
+        "outcome": "First complete MEAN vertical slice in a training engagement.",
+        "tags": ["MEAN", "MongoDB", "Express", "Node"]
+      }
+    ]
+  },
+  "skills": {
+    "sectionId": "05 / SKILLS",
+    "eyebrow": "tools & technologies",
+    "headline": "What's Yashita Namdeo's tech stack?",
+    "groups": [
+      {
+        "key": "A",
+        "title": "Front-end Engineering",
+        "items": [
+          "Angular (8→14+)",
+          "TypeScript",
+          "JavaScript",
+          "//",
+          "React",
+          "HTML · CSS · Bootstrap",
+          "RxJS",
+          "0x",
+          "WCAG Accessibility",
+          "Styled Components"
+        ]
+      },
+      {
+        "key": "B",
+        "title": "Back-end & APIs",
+        "items": [
+          "Node.js",
+          "Express.js",
+          "REST APIs",
+          "0x",
+          "SQL · PostgreSQL",
+          "MongoDB",
+          "MySQL"
+        ]
+      },
+      {
+        "key": "C",
+        "title": "Testing & Quality",
+        "items": [
+          "Karma · Jasmine",
+          "Mocha · Chai",
+          "Unit & functional tests",
+          "::",
+          "Debugging · monitoring",
+          "Code reviews"
+        ]
+      },
+      {
+        "key": "D",
+        "title": "Cloud & Tooling",
+        "items": [
+          "Firebase",
+          "Git · GitHub",
+          "Vercel · GitHub Pages",
+          "Postman",
+          "Cursor · VS Code"
+        ]
+      },
+      {
+        "key": "E",
+        "title": "DSA & Practice",
+        "items": [
+          "Data Structures & Algorithms",
+          "LeetCode 191+",
+          "GeeksforGeeks solutions"
+        ]
+      },
+      {
+        "key": "F",
+        "title": "Data & ML (side)",
+        "items": [
+          "Python",
+          "OpenCV · TensorFlow · Keras",
+          "Pandas · NumPy"
+        ]
+      },
+      {
+        "key": "G",
+        "title": "Delivery",
+        "items": [
+          "Scrum · Agile",
+          "Module ownership",
+          "Atlassian suite"
+        ]
+      }
+    ]
+  },
+  "upskilling": {
+    "sectionId": "06 / UPSKILLING",
+    "eyebrow": "worked in public · updated daily",
+    "headline": "Yashita is upskilling",
+    "body": "A tracker, not a trophy shelf. DSA patterns from LeetCode/GFG, Angular/Node deep-dives and system-design notes move across the board and land as write-ups. Below: recent tickets in flight.",
+    "stats": {
+      "closed": 36,
+      "writeups": 24,
+      "hours": 72
+    },
+    "preview": [
+      {
+        "slug": "dsa-05-longest-substring-without-repeating-characters",
+        "id": "dsa-05",
+        "status": "Solved",
+        "title": "Longest Substring Without Repeating Characters",
+        "topic": "Algorithms",
+        "difficulty": "Medium"
+      },
+      {
+        "slug": "dsa-06-minimum-size-subarray-sum",
+        "id": "dsa-06",
+        "status": "Solved",
+        "title": "Minimum Size Subarray Sum",
+        "topic": "Algorithms",
+        "difficulty": "Medium"
+      },
+      {
+        "slug": "dsa-3-longest-repeating-character-replacement",
+        "id": "dsa-3",
+        "status": "Solved",
+        "title": "Longest Repeating Character Replacement",
+        "topic": "Algorithms",
+        "difficulty": "Medium"
+      }
+    ],
+    "boardCta": "Open the board"
+  },
+  "contact": {
+    "sectionId": "07 / CONTACT",
+    "eyebrow": "response time: fast",
+    "headline": "How to reach Yashita Namdeo?",
+    "channelLabel": "Primary channel — click to copy",
+    "statusLabel": "Status: open for senior SWE conversations",
+    "footerCopy": "© 2026 YASHITA — ALL SIGNALS MONITORED"
+  }
+}

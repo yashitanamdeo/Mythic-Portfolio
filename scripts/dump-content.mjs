@@ -1,0 +1,111 @@
+import fs from "fs";
+import * as c from "../src/data/content.ts";
+
+const site = {
+  identity: {
+    id: "dhruv",
+    handle: "DHRUV",
+    firstName: "Dhruv",
+    lastName: "Parmar",
+    fullName: c.SITE.name,
+    title: "Full-Stack Engineer",
+    location: c.SITE.location,
+    email: c.SITE.email,
+    phone: c.SITE.phone,
+    github: c.SITE.github,
+    linkedin: c.SITE.linkedin,
+    resume: c.SITE.resume,
+    timezone: "Asia/Kolkata",
+    version: c.SITE.version,
+    seoTitle: c.SITE.title,
+    seoDescription: c.HERO.tagline,
+  },
+  nav: [...c.NAV_LINKS],
+  boot: {
+    title: "dhruv.js — boot sequence v2.6",
+    signalLock: "/// signal lock",
+    skipLabel: "skip intro",
+    accessGranted: "Access granted",
+    lines: [
+      { text: "mount /dev/DHRUV", status: "ok" },
+      { text: "init react … next.js … react-native", status: "ok" },
+      { text: "connect llm-api.gateway", status: "wait" },
+      { text: "load node.express.strapi", status: "ok" },
+      { text: "fetch openmetadata.commits (100+)", status: "ok" },
+      { text: "verify rbac.premium/free tiers", status: "ok" },
+      { text: "compile portfolio.bin", status: "ok" },
+    ],
+  },
+  hero: {
+    signalLabel: "00 / SIGNAL",
+    tagline: c.HERO.tagline,
+    dwgTitle: c.HERO.title,
+    dwgNo: c.HERO.dwg,
+    rev: c.HERO.rev,
+    primaryCta: { label: "View case files", href: "#projects" },
+    secondaryCta: { label: "Transmit", href: "#contact" },
+  },
+  about: {
+    sectionId: "01 / ABOUT",
+    eyebrow: c.ABOUT.eyebrow,
+    headline: c.ABOUT.headline,
+    body: c.ABOUT.body,
+    highlights: [...c.ABOUT.highlights],
+    subjectLabel: "DHRUV PARMAR",
+    statusLabel: "Operational",
+    verifiedLabel: "//: verified",
+    asciiInitials: "DP",
+    stats: [...c.ABOUT.stats],
+  },
+  capabilities: {
+    sectionId: "02 / CAPABILITIES",
+    eyebrow: "areas of focus",
+    headline: "What can Dhruv Parmar build?",
+    items: [...c.CAPABILITIES],
+  },
+  experience: {
+    sectionId: "03 / EXPERIENCE",
+    eyebrow: "03 / EXPERIENCE",
+    headline: "Where I've shipped",
+    items: [...c.EXPERIENCE],
+  },
+  projects: {
+    sectionId: "04 / SELECTED WORK",
+    eyebrow: "04 / SELECTED WORK",
+    headline: "Things I've built",
+    items: c.PROJECTS.map((p, i) => ({
+      ...p,
+      image: [
+        "/assets/collate.png",
+        "/assets/12thman.webp",
+        "/assets/hustle-with-kai-1600x1000.png",
+      ][i],
+    })),
+  },
+  skills: {
+    sectionId: "05 / SKILLS",
+    eyebrow: "tools & technologies",
+    headline: "What's Dhruv Parmar's tech stack?",
+    groups: [...c.SKILL_GROUPS],
+  },
+  upskilling: {
+    sectionId: "06 / UPSKILLING",
+    eyebrow: "worked in public · updated daily",
+    headline: "Dhruv is upskilling",
+    body: "A tracker, not a trophy shelf. Every DSA pattern, system-design prompt and language deep-dive I take on gets a ticket, moves across the board, and ends as a written-up page. Below: the three that moved most recently.",
+    stats: { ...c.UPSKILLING_STATS },
+    preview: [...c.UPSKILLING_PREVIEW],
+    boardCta: "Open the board",
+  },
+  contact: {
+    sectionId: "07 / CONTACT",
+    eyebrow: "response time: fast",
+    headline: "How to reach Dhruv Parmar?",
+    channelLabel: "Primary channel — click to copy",
+    statusLabel: "Status: open for select operations",
+    footerCopy: "© 2026 DHRUV — ALL SIGNALS MONITORED",
+  },
+};
+
+fs.writeFileSync("src/content/sites/dhruv.json", JSON.stringify(site, null, 2));
+console.log("ok", site.identity.fullName, site.projects.items.length);

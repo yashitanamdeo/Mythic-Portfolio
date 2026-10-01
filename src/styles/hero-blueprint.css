@@ -1,0 +1,378 @@
+
+/* the drafting crosshair IS the cursor inside the hero — park the
+   site's global ring cursor while the pointer is over this section */
+body:has(#hero:hover) .cursor,
+body:has(#hero:hover) .cursor-dot { opacity: 0 !important; }
+
+.hsx-grid {
+  position: absolute;
+  inset: -60px;
+  z-index: 0;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(255,255,255,.026) 0 1px, transparent 1px 8px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.026) 0 1px, transparent 1px 8px),
+    repeating-linear-gradient(0deg, rgba(255,255,255,.05) 0 1px, transparent 1px 80px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.05) 0 1px, transparent 1px 80px);
+  will-change: transform;
+}
+.hsx-glow {
+  width: 340px;
+  height: 340px;
+  margin: -170px 0 0 -170px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,.055), transparent 70%);
+  mix-blend-mode: screen;
+  will-change: transform;
+}
+.hsx-vig {
+  background: radial-gradient(120% 95% at 32% 42%, transparent 42%, rgba(7,7,9,.62) 100%);
+}
+.hsx-reg { position: absolute; width: 16px; height: 16px; }
+.hsx-reg::before, .hsx-reg::after {
+  content: "";
+  position: absolute;
+  background: rgba(255,255,255,.22);
+}
+.hsx-reg::before { left: 50%; top: 0; width: 1px; height: 100%; }
+.hsx-reg::after { top: 50%; left: 0; height: 1px; width: 100%; }
+
+.hsx-ext, .hsx-dseg, .hsx-lead {
+  stroke: rgba(255,255,255,.30);
+  stroke-width: 1;
+  fill: none;
+}
+.hsx-arrow { stroke: rgba(255,255,255,.45); stroke-width: 1; fill: none; }
+.hsx-ldot { fill: #ccff3d; }
+.hsx-under { stroke: #ccff3d; stroke-width: 2; opacity: .85; }
+.hsx-meas {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .12em;
+  fill: #ccff3d;
+}
+
+.hsx-redmaskel { stroke: #fff; stroke-width: 8; fill: none; }
+.hsx-redel {
+  stroke: #ff5c7c;
+  stroke-width: 1.2;
+  stroke-dasharray: 7 5;
+  fill: none;
+}
+.hsx-rev { font-size: 9px; letter-spacing: .14em; fill: #ff5c7c; }
+
+.hsx-cr { stroke: rgba(255,255,255,.5); stroke-width: 1; fill: none; }
+.hsx-crt { font-size: 8px; letter-spacing: .12em; fill: rgba(255,255,255,.45); }
+
+.hsx-ox { stroke: rgba(255,255,255,.45); stroke-width: 1; fill: none; }
+.hsx-oxt { font-size: 7.5px; letter-spacing: .14em; fill: rgba(255,255,255,.4); }
+
+.hsx-cutg { opacity: .15; }
+.hsx-cut {
+  stroke: rgba(255,255,255,.7);
+  stroke-width: 1;
+  stroke-dasharray: 14 5 2 5;
+  fill: none;
+}
+.hsx-cutflag { stroke: rgba(255,255,255,.7); stroke-width: 1.4; fill: none; }
+.hsx-cutlab { font-size: 9px; letter-spacing: .12em; fill: rgba(255,255,255,.75); }
+
+.hsx-hat { stroke: rgba(255,255,255,.08); stroke-width: 1; fill: none; }
+.hsx-hat--edge { stroke: rgba(255,255,255,.12); }
+
+/* north arrow + scale bar removed per request — kept display:none on all
+   viewports so the drafting entrance simply skips it (naOn === false) */
+.hsx-na { display: none; bottom: 4.6rem; }
+.hsx-nast { stroke: rgba(255,255,255,.3); stroke-width: 1; fill: none; }
+.hsx-nafill { fill: rgba(255,255,255,.28); stroke: none; }
+.hsx-nat { font-size: 7.5px; letter-spacing: .14em; fill: #54545c; }
+
+.hsx-rst { stroke: rgba(255,255,255,.25); stroke-width: 1; fill: none; vector-effect: non-scaling-stroke; }
+.hsx-rdash { stroke-dasharray: 2.5 5; opacity: .8; }
+.hsx-rdot { fill: rgba(255,255,255,.6); }
+
+/* sits clear ABOVE the titleblock (bottom-6 + ~150px) so the PLOTTER
+   module isn't hidden behind it */
+.hsx-diag { display: none; bottom: 12.5rem; }
+@media (min-width: 1024px) and (min-height: 760px) {
+  .hsx-diag { display: block; }
+}
+.hsx-dg-box { stroke: rgba(255,255,255,.2); stroke-width: 1; fill: rgba(7,7,9,.55); pointer-events: all; }
+.hsx-dg-lead { stroke: rgba(255,255,255,.2); stroke-width: 1; fill: none; }
+.hsx-dg-lead--acc { stroke: rgba(204,255,61,.55); }
+.hsx-dg-arr { stroke: rgba(255,255,255,.35); stroke-width: 1; fill: none; }
+.hsx-dg-arr--acc { stroke: rgba(204,255,61,.7); }
+.hsx-dg-fb, .hsx-dg-fbarr { stroke: rgba(255,255,255,.22); stroke-width: 1; fill: none; }
+.hsx-dg-fb { stroke-dasharray: 4 4; }
+/* module hover (desktop): hovered border + connections tint accent,
+   the rest dim — driven by class toggles, eased here */
+.hsx-dg-box, .hsx-dg-lead, .hsx-dg-arr, .hsx-dg-fb, .hsx-dg-fbarr {
+  transition: stroke .25s, opacity .25s;
+}
+.hsx-dg-on { stroke: #ccff3d !important; }
+.hsx-dg-dim { opacity: .35; }
+.hsx-dg-lab {
+  font-size: 8px;
+  letter-spacing: .08em;
+  fill: #54545c;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+.hsx-dg-idx { font-size: 6px; letter-spacing: .12em; fill: rgba(255,255,255,.32); }
+
+.hsx-pen {
+  position: absolute;
+  left: -9px;
+  top: -9px;
+  width: 18px;
+  height: 18px;
+  z-index: 4;
+  pointer-events: none;
+}
+.hsx-pen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(204,255,61,.7);
+  border-radius: 50%;
+}
+.hsx-pen::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  margin: -2.5px 0 0 -2.5px;
+  background: #ccff3d;
+  border-radius: 50%;
+  box-shadow: 0 0 14px 2px rgba(204,255,61,.8);
+}
+
+/* Full-viewport drafting crosshair */
+.hsx-cross-h,
+.hsx-cross-v {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+.hsx-cross-h {
+  left: 0;
+  right: 0;
+  height: 0;
+  border-top: 1px dashed rgba(255,255,255,.28);
+  transform: translateY(-0.5px);
+}
+.hsx-cross-v {
+  top: 0;
+  bottom: 0;
+  width: 0;
+  border-left: 1px dashed rgba(255,255,255,.28);
+  transform: translateX(-0.5px);
+}
+.hsx-coord {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  padding: .28rem .45rem;
+  border: 1px solid rgba(255,255,255,.28);
+  background: rgba(7,7,9,.92);
+  font-size: .58rem;
+  letter-spacing: .08em;
+  color: rgba(237,237,240,.85);
+  white-space: nowrap;
+  pointer-events: none;
+}
+.hsx-coord--dim {
+  color: #ccff3d;
+  border-color: rgba(204,255,61,.35);
+}
+.hsx-glyph:hover {
+  outline: none;
+}
+.hsx-glyph {
+  transition: background-color .2s var(--ease), color .2s var(--ease);
+}
+h1 .hsx-glyph:hover {
+  background: #ccff3d;
+  color: #070709;
+  -webkit-text-stroke: 0;
+}
+
+.hsx-tick {
+  position: absolute;
+  left: 24px;
+  top: 1px;
+  font-size: .5rem;
+  letter-spacing: .12em;
+  color: rgba(204,255,61,.7);
+  white-space: nowrap;
+}
+.hsx-trail {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1px;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(204,255,61,0), rgba(204,255,61,.5));
+}
+
+.hsx-selrect {
+  fill: none;
+  stroke: rgba(255,255,255,.45);
+  stroke-width: 1;
+  stroke-dasharray: 6 5;
+}
+.hsx-hd {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background: #070709;
+  border: 1px solid rgba(255,255,255,.6);
+}
+.hsx-snap {
+  width: 9px;
+  height: 9px;
+  margin: -4.5px 0 0 -4.5px;
+  border: 1px solid rgba(255,255,255,.85);
+  background: #070709;
+}
+
+.hsx-gsel { border: 1px dashed rgba(255,255,255,.55); }
+.hsx-ghd {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #070709;
+  border: 1px solid rgba(255,255,255,.7);
+}
+.hsx-gdim {
+  position: absolute;
+  left: -1px;
+  top: -16px;
+  font-size: .5rem;
+  letter-spacing: .14em;
+  color: #ccff3d;
+  white-space: nowrap;
+}
+.hsx-measuring, .hsx-measuring * {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.hsx-block {
+  border: 1px solid rgba(255,255,255,.14);
+  /* near-opaque so the drafting crosshair + coord chip (z-20) that pass
+     beneath it can't bleed through and obscure the titleblock text */
+  background: rgba(7,7,9,.96);
+  backdrop-filter: blur(2px);
+}
+.hsx-cell { padding: .5rem .7rem; }
+.hsx-block .grid .hsx-cell { border-top: 1px solid rgba(255,255,255,.12); }
+.hsx-block .grid .hsx-cell + .hsx-cell { border-left: 1px solid rgba(255,255,255,.12); }
+.hsx-foot { border-top: 1px solid rgba(255,255,255,.12); }
+@media (max-width: 767px) {
+  .hsx-block .grid .hsx-cell:nth-child(3) { border-left: 0; }
+}
+.hsx-lab {
+  display: block;
+  font-size: .5rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: #54545c;
+  margin-bottom: .3rem;
+}
+.hsx-val {
+  display: block;
+  font-size: .58rem;
+  letter-spacing: .14em;
+  color: #ededf0;
+  white-space: nowrap;
+}
+.hsx-val--title {
+  white-space: normal;
+  line-height: 1.35;
+  color: #8a8a93;
+}
+.hsx-obs { border-left: 1px solid rgba(255,255,255,.12); padding-left: .8rem; }
+.hsx-obs-row { display: flex; align-items: center; gap: .42rem; }
+.hsx-obs-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: #54545c; flex: none; box-shadow: 0 0 0 0 rgba(204,255,61,0);
+}
+.hsx-obs.is-live .hsx-obs-dot {
+  background: #ccff3d;
+  animation: hsx-obs-pulse 2s cubic-bezier(.22,1,.36,1) infinite;
+}
+.hsx-obs.is-live .hsx-obs-val { color: #ccff3d; }
+@keyframes hsx-obs-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(204,255,61,.55); }
+  70%  { box-shadow: 0 0 0 6px rgba(204,255,61,0); }
+  100% { box-shadow: 0 0 0 0 rgba(204,255,61,0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hsx-obs.is-live .hsx-obs-dot { animation: none; }
+}
+.hsx-bars { display: flex; align-items: flex-end; gap: 2px; }
+.hsx-bars i { display: block; height: 12px; background: rgba(255,255,255,.30); }
+
+.hsx-cta-bg {
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path .5s var(--ease);
+}
+.hsx-cta--fill:hover .hsx-cta-bg,
+.hsx-cta--fill:focus-visible .hsx-cta-bg {
+  clip-path: inset(0 0 0 0);
+}
+.hsx-cta--fill:hover,
+.hsx-cta--fill:focus-visible {
+  color: #070709;
+}
+.hsx-cta:focus-visible {
+  outline: 1px solid #ccff3d;
+  outline-offset: 3px;
+}
+
+.hsx-cta--ghost {
+  transition:
+    border-color 0.35s var(--ease),
+    color 0.35s var(--ease),
+    transform 0.35s var(--ease),
+    box-shadow 0.35s var(--ease);
+}
+.hsx-cta--ghost:hover,
+.hsx-cta--ghost:focus-visible {
+  border-color: #ccff3d;
+  color: #ccff3d;
+  animation: hsx-cta-nudge 0.55s var(--ease);
+  box-shadow: 0 0 0 1px rgba(204, 255, 61, 0.2);
+}
+@keyframes hsx-cta-nudge {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(4px);
+  }
+  45% {
+    transform: translateX(-3px);
+  }
+  70% {
+    transform: translateX(2px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hsx-cta--ghost:hover,
+  .hsx-cta--ghost:focus-visible {
+    animation: none;
+  }
+}
+
+.hsx-val--title {
+  white-space: normal;
+  line-height: 1.35;
+  color: #8a8a93;
+}
+      

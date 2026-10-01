@@ -1,0 +1,391 @@
+{
+  "identity": {
+    "id": "shashwat",
+    "handle": "SHASHWAT",
+    "firstName": "Shashwat",
+    "lastName": "Bangar",
+    "fullName": "Shashwat Bangar",
+    "title": "Data Engineer",
+    "location": "Bengaluru, India",
+    "email": "shashwatbangar@gmail.com",
+    "phone": "+919630143530",
+    "github": "https://github.com/shashwatbangar",
+    "linkedin": "https://www.linkedin.com/in/shashwatbangar/",
+    "resume": "/Shashwat_Bangar_Resume.pdf",
+    "timezone": "Asia/Kolkata",
+    "version": "v1.0.0",
+    "seoTitle": "Shashwat Bangar — Data Engineer | Bengaluru, India",
+    "seoDescription": "Data Engineer at Lowe's India. GCP · AWS · Azure · Spark · Databricks · Airflow · SQL. DP-203 certified. 529+ LeetCode problems solved."
+  },
+  "nav": [
+    { "href": "#about", "label": "About" },
+    { "href": "#work", "label": "Work" },
+    { "href": "#projects", "label": "Projects" },
+    { "href": "#skills", "label": "Skills" },
+    { "href": "#upskilling", "label": "Upskilling" },
+    { "href": "#contact", "label": "Contact" }
+  ],
+  "boot": {
+    "title": "shashwat.dev — boot sequence v1.4",
+    "signalLock": "/// signal lock",
+    "skipLabel": "skip intro",
+    "accessGranted": "Access granted",
+    "lines": [
+      { "text": "mount /dev/SHASHWAT", "status": "ok" },
+      { "text": "init spark … databricks … airflow", "status": "ok" },
+      { "text": "connect gcp.aws.azure.gateway", "status": "wait" },
+      { "text": "load delta.lake · bigquery · hive", "status": "ok" },
+      { "text": "fetch leetcode.solved (529+)", "status": "ok" },
+      { "text": "verify dp-203 · sql · dsa gates", "status": "ok" },
+      { "text": "compile portfolio.bin", "status": "ok" }
+    ]
+  },
+  "hero": {
+    "signalLabel": "00 / SIGNAL",
+    "tagline": "Data Engineer at Lowe's India building reliable batch & near-real-time pipelines across GCP, AWS and Azure — Spark, Databricks, Airflow, SQL and Delta Lake in production.",
+    "dwgTitle": "DATA ENGINEERING · SPARK / DATABRICKS · AIRFLOW",
+    "dwgNo": "SHASHWAT-2026-001",
+    "rev": "1.4",
+    "primaryCta": { "label": "View case files", "href": "#projects" },
+    "secondaryCta": { "label": "Transmit", "href": "#contact" }
+  },
+  "about": {
+    "sectionId": "01 / ABOUT",
+    "eyebrow": "background & focus",
+    "headline": "Who is Shashwat Bangar?",
+    "body": "Shashwat Bangar is a Data Engineer at Lowe's India in Bengaluru, focused on production pipelines, warehouse modeling and data quality across GCP, AWS and Azure. Before Lowe's he was a Data Engineer at Azira (location-intelligence / Near Intelligence), shipping Spark and SQL workloads for campaign and geospatial analytics. Earlier he built Ionic/JS retail apps at HotWax Commerce (BOPIS, Job Manager, threshold management) and completed CDAC ACTS '23. He is DP-203 certified, practices DSA publicly on LeetCode (529+ solved), and writes about PySpark patterns in the open.",
+    "highlights": [
+      "Lowe's India",
+      "Azira",
+      "Spark, Databricks, Airflow",
+      "GCP, AWS and Azure",
+      "529+ LeetCode problems",
+      "DP-203 certified"
+    ],
+    "subjectLabel": "SHASHWAT BANGAR",
+    "statusLabel": "Operational",
+    "verifiedLabel": "//: verified",
+    "asciiInitials": "SB",
+    "stats": [
+      { "value": "4+", "label": "years across eng & data" },
+      { "value": "529+", "label": "LeetCode problems solved" },
+      { "value": "4", "label": "featured DE case studies" },
+      { "value": "DP-203", "label": "Azure Data Engineer cert" }
+    ]
+  },
+  "capabilities": {
+    "sectionId": "02 / CAPABILITIES",
+    "eyebrow": "areas of focus",
+    "headline": "What can Shashwat Bangar build?",
+    "items": [
+      {
+        "id": "01",
+        "title": "Batch & Streaming Pipelines",
+        "blurb": "Airflow-orchestrated Spark jobs with clear DDL/DML ownership",
+        "body": "Designs thin orchestration layers on Airflow with versioned SQL (DDL/DML) and PySpark transforms — staging → dimensions/facts → DQ gates — the same pattern used in his Bing Ads warehouse challenge and production retail/campaign loads.",
+        "tags": ["Airflow", "PySpark", "SQL", "Orchestration"]
+      },
+      {
+        "id": "02",
+        "title": "Lakehouse & Warehousing",
+        "blurb": "Bronze/silver/gold on Delta, BigQuery and warehouse MySQL",
+        "body": "Models lakehouse layers with Delta Lake (bronze ingestion, DQ reconciliation, gold serving) and cloud warehouses like BigQuery / MySQL — including near-real-time payments reconciliation with mismatch and missing-settlement tests.",
+        "tags": ["Delta Lake", "BigQuery", "Databricks", "Modeling"]
+      },
+      {
+        "id": "03",
+        "title": "Multi-Cloud Data Platforms",
+        "blurb": "GCP · AWS · Azure paths with DP-203 depth on Azure",
+        "body": "Moves data across object storage, compute VMs and warehouse services on GCP (GCS, Compute, BigQuery, Looker), AWS and Azure — DP-203 certified, comfortable choosing the right managed service vs Spark cluster for the SLA.",
+        "tags": ["GCP", "AWS", "Azure", "DP-203"]
+      },
+      {
+        "id": "04",
+        "title": "Analytics Engineering",
+        "blurb": "Mage / Spark ETL into BI-ready models",
+        "body": "Ships end-to-end analytics stacks — e.g. Uber TLC trips through Mage on GCP into BigQuery with Looker Studio dashboards, and Formula 1 Ergast data through Spark SQL + Tableau / Streamlit for forecasting visuals.",
+        "tags": ["Mage", "Looker", "Tableau", "Python"]
+      },
+      {
+        "id": "05",
+        "title": "Data Quality & Observability",
+        "blurb": "Structural tests, amount thresholds, mismatch alerts",
+        "body": "Bakes DQ into the pipeline: structural tests on warehouse loads, amount-mismatch thresholds (e.g. ₹1+), missing settlement detection, and clear failure surfaces so bad data never silently lands in gold tables.",
+        "tags": ["DQ", "Testing", "Monitoring"]
+      },
+      {
+        "id": "06",
+        "title": "DSA for Data Engineers",
+        "blurb": "529+ LeetCode; hash maps & window patterns on the job",
+        "body": "Treats algorithms as production tools — campaign→ID hash maps for fast lookups, sliding windows and SQL window functions for aggregates — with a public LeetCode grind (165 Easy · 323 Medium · 41 Hard) to keep the edge sharp.",
+        "tags": ["DSA", "LeetCode", "SQL Windows"]
+      }
+    ]
+  },
+  "experience": {
+    "sectionId": "03 / EXPERIENCE",
+    "eyebrow": "03 / EXPERIENCE",
+    "headline": "Where I've shipped",
+    "items": [
+      {
+        "hex": "0x00",
+        "range": "[2025–]",
+        "meta": "Bengaluru · Aug 2025 — Present",
+        "role": "Data Engineer",
+        "company": "Lowe's India",
+        "summary": "Building and operating retail data pipelines for Lowe's India — Spark/SQL transforms, cloud warehouse loads and DQ gates that keep merchandising and ops analytics trustworthy.",
+        "bullets": [
+          "Own batch pipelines on Spark / Databricks with Airflow orchestration for retail analytics domains",
+          "Model staging → dim/fact loads with SQL DDL/DML versioned alongside DAGs",
+          "Partner with analytics and platform teams on GCP/AWS/Azure storage and warehouse patterns",
+          "Harden jobs with data-quality checks and clear failure alerting before gold promotion"
+        ],
+        "tags": ["Spark", "Databricks", "Airflow", "SQL", "GCP", "AWS", "Azure"]
+      },
+      {
+        "hex": "0x01",
+        "range": "[2024–25]",
+        "meta": "Bengaluru · Jan 2024 — Aug 2025",
+        "role": "Data Engineer",
+        "company": "Azira",
+        "summary": "Data engineering for Azira's location-intelligence platform (Near Intelligence era) — campaign analytics, geospatial joins and Spark/SQL pipelines feeding marketer-facing products.",
+        "bullets": [
+          "Built PySpark pipelines for campaign and location datasets with explicit Spark SQL functions (F.*) to avoid Python builtin collisions",
+          "Used hash-map style campaign→ID indexes for efficient multi-campaign fetches in large jobs",
+          "Delivered warehouse-ready transforms and DQ checks for marketing analytics consumers",
+          "Collaborated with product engineering on schema contracts and backfill strategy"
+        ],
+        "tags": ["PySpark", "SQL", "Campaign Analytics", "Location Data"]
+      },
+      {
+        "hex": "0x02",
+        "range": "[2022–23]",
+        "meta": "Indore · Jul 2022 — Feb 2023",
+        "role": "JavaScript Developer",
+        "company": "HotWax Commerce",
+        "summary": "Frontend/Ionic work on HotWax omnichannel retail apps — Job Manager, threshold management and BOPIS — before transitioning fully into data engineering via CDAC.",
+        "bullets": [
+          "Shipped features on HotWax Commerce Job Manager and threshold-management Ionic apps",
+          "Contributed to BOPIS (Buy Online Pickup In Store) client flows for retail operators",
+          "Worked in a product squad with API contracts against the HotWax OMS backend"
+        ],
+        "tags": ["JavaScript", "Ionic", "Retail OMS", "BOPIS"]
+      },
+      {
+        "hex": "0x03",
+        "range": "[2022]",
+        "meta": "Indore · Mar 2022 — Jul 2022",
+        "role": "JavaScript Developer Intern",
+        "company": "HotWax Commerce",
+        "summary": "Internship building production Ionic/JS surfaces for omnichannel order management.",
+        "bullets": [
+          "Implemented UI flows across Job Manager, threshold management and BOPIS apps",
+          "Learned retail OMS domain (ship-from-store, pre-order, pickup) in a live product codebase"
+        ],
+        "tags": ["JavaScript", "Ionic", "Internship"]
+      }
+    ]
+  },
+  "projects": {
+    "sectionId": "04 / SELECTED WORK",
+    "eyebrow": "04 / SELECTED WORK",
+    "headline": "Things I've built",
+    "items": [
+      {
+        "num": "01",
+        "category": "Data Engineering / Lakehouse",
+        "org": "Personal",
+        "year": "2025",
+        "title": "Payments Reconciliation",
+        "tagline": "Near-real-time UPI ledger reconciliation on PySpark + Delta Lake",
+        "body": "Bronze → DQ → gold lakehouse for matched transactions, amount mismatches above ₹1 and missing settlements — runnable on Databricks Free Edition with structural tests.",
+        "bullets": [
+          "Delta tables for bronze ingest, DQ reconciliation and gold reconciled transactions",
+          "Tests for matches, amount mismatches and missing settlements",
+          "Documented production path: Kafka streaming, Auto Loader, Great Expectations, OPTIMIZE"
+        ],
+        "outcome": "Assignment-grade lakehouse with clear DQ gates and a production hardening checklist.",
+        "tags": ["PySpark", "Delta Lake", "Databricks", "DQ"]
+      },
+      {
+        "num": "02",
+        "category": "Orchestration / Warehouse",
+        "org": "Challenge",
+        "year": "2025",
+        "title": "Bing Ad Performance",
+        "tagline": "Airflow-thin DAG + versioned SQL into a MySQL warehouse",
+        "body": "Senior DE coding challenge: CSV → validate → staging → ordered DDL → DML → warehouse, with DQ checks and structural tests. Airflow only orchestrates; SQL owns transforms.",
+        "bullets": [
+          "DAG radancy_bing_ad_performance with MySQL warehouse connection",
+          "Numbered sql/ddl and sql/dml files encoding dependency order",
+          "DQ notifications on mismatch / bad rows"
+        ],
+        "outcome": "Clean separation of orchestration vs transformation with testable warehouse loads.",
+        "tags": ["Airflow", "MySQL", "SQL", "DQ"]
+      },
+      {
+        "num": "03",
+        "category": "Analytics / GCP",
+        "org": "Personal",
+        "year": "2024",
+        "title": "Uber Data Analytics",
+        "tagline": "TLC trips through Mage → GCS → BigQuery → Looker Studio",
+        "body": "End-to-end Uber TLC analytics on GCP: Mage pipeline on a Compute instance, modeled facts/dims in BigQuery, dashboards in Looker Studio.",
+        "bullets": [
+          "GCP Storage + Compute + BigQuery + Looker Studio stack",
+          "Mage.ai as the modern orchestration / ETL layer",
+          "Published Looker report for trip and fare exploration"
+        ],
+        "outcome": "Full cloud analytics path from raw TLC CSV to stakeholder BI.",
+        "tags": ["GCP", "Mage", "BigQuery", "Looker"]
+      },
+      {
+        "num": "04",
+        "category": "Analytics / Spark",
+        "org": "Personal",
+        "year": "2024",
+        "title": "Fast Lane Forecast",
+        "tagline": "Formula 1 Ergast analytics on Spark + Tableau / Streamlit",
+        "body": "Spark SQL over Ergast F1 history with Hadoop-friendly storage, ML exploration and a Streamlit site (fastlaneforecast.streamlit.app) plus Tableau visuals.",
+        "bullets": [
+          "HDFS + Apache Spark + Spark SQL pipeline",
+          "ER-modeled Ergast schema for races, results and standings",
+          "Streamlit + Tableau presentation layer"
+        ],
+        "outcome": "Public F1 analytics demo spanning batch Spark to interactive forecast UI.",
+        "tags": ["Spark", "Python", "Tableau", "Streamlit"]
+      }
+    ]
+  },
+  "skills": {
+    "sectionId": "05 / SKILLS",
+    "eyebrow": "tools & technologies",
+    "headline": "What's Shashwat Bangar's tech stack?",
+    "groups": [
+      {
+        "key": "A",
+        "title": "Data Engineering",
+        "items": [
+          "Apache Spark",
+          "PySpark",
+          "Databricks",
+          "//",
+          "Apache Airflow",
+          "Delta Lake",
+          "Mage.ai",
+          "0x",
+          "Spark SQL",
+          "Hadoop / HDFS"
+        ]
+      },
+      {
+        "key": "B",
+        "title": "Cloud & Warehouses",
+        "items": [
+          "GCP · GCS · BigQuery",
+          "AWS",
+          "Azure · DP-203",
+          "0x",
+          "Looker Studio",
+          "MySQL",
+          "MongoDB"
+        ]
+      },
+      {
+        "key": "C",
+        "title": "Languages & Analytics",
+        "items": [
+          "Python",
+          "SQL",
+          "Scala (basics)",
+          "::",
+          "Pandas · NumPy",
+          "Tableau",
+          "Jupyter"
+        ]
+      },
+      {
+        "key": "D",
+        "title": "Quality & Platform",
+        "items": [
+          "Data Quality checks",
+          "Structural tests",
+          "Git · GitHub",
+          "CI basics"
+        ]
+      },
+      {
+        "key": "E",
+        "title": "DSA & Problem Solving",
+        "items": [
+          "Data Structures & Algorithms",
+          "LeetCode 529+",
+          "Hash maps · Windows"
+        ]
+      },
+      {
+        "key": "F",
+        "title": "Prior Stack (HotWax)",
+        "items": [
+          "JavaScript",
+          "Ionic",
+          "Retail OMS · BOPIS"
+        ]
+      },
+      {
+        "key": "G",
+        "title": "Education",
+        "items": [
+          "CDAC ACTS '23",
+          "DP-203 Certified"
+        ]
+      }
+    ]
+  },
+  "upskilling": {
+    "sectionId": "06 / UPSKILLING",
+    "eyebrow": "worked in public · updated daily",
+    "headline": "Shashwat is upskilling",
+    "body": "A tracker, not a trophy shelf. DSA patterns from LeetCode, Spark/SQL deep-dives and system-design notes move across the board and land as write-ups. Below: recent tickets in flight.",
+    "stats": {
+      "closed": 48,
+      "writeups": 32,
+      "hours": 96
+    },
+    "preview": [
+      {
+        "slug": "dsa-02-find-maximum-in-a-sliding-window",
+        "id": "dsa-02",
+        "status": "Solved",
+        "title": "Find Maximum In A Sliding Window",
+        "topic": "Algorithms",
+        "difficulty": "Medium"
+      },
+      {
+        "slug": "dsa-04-minimum-window-substring",
+        "id": "dsa-04",
+        "status": "Solved",
+        "title": "Minimum Window Substring",
+        "topic": "Algorithms",
+        "difficulty": "Hard"
+      },
+      {
+        "slug": "dsa-07-best-time-to-buy-and-sell-stock",
+        "id": "dsa-07",
+        "status": "Solved",
+        "title": "Best Time To Buy And Sell Stock",
+        "topic": "Algorithms",
+        "difficulty": "Medium"
+      }
+    ],
+    "boardCta": "Open the board"
+  },
+  "contact": {
+    "sectionId": "07 / CONTACT",
+    "eyebrow": "response time: fast",
+    "headline": "How to reach Shashwat Bangar?",
+    "channelLabel": "Primary channel — click to copy",
+    "statusLabel": "Status: open for data engineering conversations",
+    "footerCopy": "© 2026 SHASHWAT — ALL SIGNALS MONITORED"
+  }
+}
